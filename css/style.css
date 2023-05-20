@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #081b29;
-  --second-bg-color: #112e42;
-  --text-color: #ededed;
-  --main-color: #00abf0;
+  --bg-color: #3b0404;
+  --second-bg-color: #d44209;
+  --text-color: #f1c5c5;
+  --main-color: #890c0c;
 }
 
 html {
@@ -77,10 +77,12 @@ section {
  .home {
     display:flex;
     align-items: center;
-    padding: 0 9%;
-    background: url('/image/home.jpg') no-repeat;
+    padding: 0 11%;
+    background: url('/image/def.jpg') no-repeat;
     background-size: cover; 
     background-position: center;
+    opacity: 92%;
+    
 }
  
 .home-content {
@@ -90,7 +92,8 @@ section {
 .home-content h1 {
  font-size: 5.6rem;
  font-weight: 700;
- line-height: 1.3;   
+ line-height: 1.3; 
+ text-shadow: 2px 2px #000000;  
 }
 .home-content h1 span {
     color: var(--text-color);
@@ -98,8 +101,9 @@ section {
 .home-content .text-animate {
     position: relative;
     width: 32.8rem;
+    
 }
-.home-content .text-animate h3{
+.home-content .text-animate h3 {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
@@ -110,8 +114,9 @@ section {
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
+    
 }
-.home-content .text-animate h3::before{
+.home-content .text-animate h3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -122,10 +127,12 @@ section {
     z-index: -1;
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
+   
 }
 .home-content p {
   font-size: 1.6rem;  
   margin: 2rem 0 4rem;
+  text-shadow: 2px 2px #0a4491;
 }
 .btn-box {
     position: relative;
@@ -133,6 +140,7 @@ section {
     justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
+    
 }
 
 .btn-box .btn {
@@ -229,6 +237,7 @@ width: 100%;
     height: 0%;
     background: transparent;
     transition: 3s;
+    opacity: 25%;
 }
 .home-imgHover:hover {
      background: var(--bg-color);
@@ -713,7 +722,7 @@ gap: 5rem;
     100% {
       width: 0;  
     }
-    
+
     65%,
     78%,
     85% {
