@@ -1,131 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!----------- menu encabezado ------->
+    <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Agustin</a>
+                <a href="#">AGUSTÍN</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MÍ</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
 
-        <!----------- seccion inicio  ------->
-<section id="inicio" class="inicio">
-    <div class="contenido-banner">
-        <div class="contenedor-img">
-            <img src="images/PERFIL3.jpeg" alt="">
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Fondoredondo.png" alt="">
+            </div>
+            <h1>AGUSTÍN VARGAS</h1>
+            <h2>Full Stack Web Developer - Junior UI/UX</h2>
+            <div class="redes">
+                <a href="https://github.com/agustinnnv" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/agustinnnv/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-inbox"></i></i></a>
+            </div>
         </div>
-        <h1>AGUSTIN VARGAS</h1>
-        <h2>Full Stack Web Developer</h2>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Agustin Vargas.</span> Mi enfoque se centra en la colaboración y el trabajo en equipo, valores que considero esenciales para alcanzar resultados sobresalientes. Ansío establecer conexiones con otros profesionales dentro del campo, con el firme propósito de nutrir mi comprensión y adquirir valiosas lecciones de quienes comparten mi labor.
+
+                Agradezco sinceramente el tiempo que ha dedicado a leer esta introducción y espero con entusiasmo la posibilidad de conectarnos en un futuro cercano.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-11-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            54 381 3887016
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            aguvargass3@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Tucumán, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.flipsnack.com/BD98CB77C6F/curr-culum-vitae-cv-vargas-agustin-esp-1/full-view.html" download target="_blank">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Iniciativa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Escuela Técnica N°5</h4>
+                        <span class="casa">Maestro Mayor De Obras</span>
+                        <span class="fecha">2011 - 2017</span>
+                        <p> Poseo un profundo conocimiento y experiencia en la planificación, supervisión y ejecución de proyectos de construcción. Mi habilidad para coordinar equipos, interpretar planos y garantizar el cumplimiento de normativas me ha permitido desempeñar un papel fundamental en la materialización de diversas estructuras. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Universidad de Artes</h4>
+                        <span class="casa">Fotógrafo</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Como fotógrafo, busco contar historias visuales únicas y transmitir emociones a través de mis imágenes. Cada proyecto es una nueva oportunidad para explorar la belleza que nos rodea y congelar esos instantes irrepetibles en el tiempo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Soy Henry</h4>
+                        <span class="casa">Desarrollo Web</span>
+                        <span class="fecha">2023</span>
+                        <p>Durante mi tiempo en el bootcamp de Henry, adquirí conocimientos en el manejo de tecnologías como: JavaScript, CSS, HTML, React y Redux para la parte delantera, además de utilizar Express, Node JS, Sequelize y Postgres SQL para el backend. Estas tecnologías fueron sometidas a evaluación en cuatro módulos distintos, junto con la ejecución y análisis de un proyecto en solitario y otro en equipo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>  
+                </div>
+
+              <div class="col derecha">
+                   
+                    <div class="item der">
+                        <h4>Coder House</h4>
+                        <span class="casa">Diseño UX/UI</span>
+                        <span class="fecha">2023</span>
+                        <p>Mi enfoque se centra en fusionar la estética creativa con la usabilidad intuitiva para garantizar que cada producto que diseño no solo sea visualmente atractivo, sino también altamente efectivo en términos de experiencia del usuario. Con un ojo agudo para el diseño y una sólida comprensión de las necesidades del usuario, estoy comprometido en llevar la interfaz de usuario y la experiencia del usuario al siguiente nivel.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">FIGMA</span>
+                        <span class="fecha">2023</span>
+                        <p>Recientemente tuve la oportunidad de realizar un curso intensivo sobre Figma, una herramienta que ha revolucionado la forma en que abordamos el diseño y la colaboración en proyectos creativos. Este curso no solo me proporcionó una comprensión profunda de las capacidades de Figma, sino que también me permitió explorar nuevas formas de expresar mi creatividad y trabajar de manera más eficiente en equipo. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div> -->
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Necochea 847, Tucumán
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame:54 381-3887016
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: aguvargass@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-
+            <a href="https://github.com/agustinnnv" target="_blank"><i class="fa-brands fa-github"></i></a>
+            
+            
+            <a href="https://www.linkedin.com/in/agustinnnv/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-inbox"></i></i></a>
         </div>
-    </div>
-</section>
+    </footer>
 
-        <!----------- seccion Sobre mi  ------->
-<section id="sobremi" class="sobremi">
-    <div class="contenedor-seccion">
-        <h2>Sobre Mí</h2>
-        <p><span>Hola, soy Agustin Vargas.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam architecto, magni vitae tempora vel nobis numquam voluptatum repellendus soluta? Eligendi, porro animi veniam rerum quia numquam ipsam et natus.</p>
-    <div class="fila">
-        <!---- datos personales  --->
-    <div class="col">
-        <h3>Datos Personales</h3>
-        <ul>
-            <li>
-                <strong>Cumpleaños</strong>
-                11-11-1998
-            </li>
-            <li>
-                <strong>Telefono</strong>
-                +54 381-388-7016
-            </li>
-            <li>
-                <strong>Email</strong>
-                aguvargass3@gmail.com
-            </li>
-            <li>
-                <strong>Dirección</strong>
-                Tucuman, Argentina
-            </li>
-            <li>
-                <strong>Cargo</strong>
-                <span>FREELANCE</span>
-            </li>
-        </ul>
-    </div>
-        <!---- intereses  --->
-    <div class="col">
-        <h3>Intereses</h3>
-        <div class="contenedor-intereses">
-            <div class="interes">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>JUEGOS</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-headphones"></i>
-                <span>JUEGOS</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-plane"></i>
-                <span>VIAJAR</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-windows"></i>
-                <span>WINDOWS</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-person-hiking"></i>
-                <span>DEPORTE</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-book"></i>
-                <span>LIBROS</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-car"></i>
-                <span>AUTOS</span>
-            </div>
-            <div class="interes">
-                <i class="fa-solid fa-camera"></i>
-                <span>FOTOS</span>
-            </div>
-        </div>
-    </div>
-
-    </div>
-    <button>
-        Descargar CV <i class="fa-solid fa-dowload"></i>
-        <span class="overlay"></span>
-    </button>
-    
-    </div>
-</section>
+    <script src="script.js"></script>
 </body>
 </html>
