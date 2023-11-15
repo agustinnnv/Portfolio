@@ -640,41 +640,46 @@ footer .redes a:hover{
     }
 }
 @media screen and (max-width:700px){
+    .sobremi .contenido-seccion{
+        max-width: 1000px;
+        margin-bottom: 60px;
+    }
     .sobremi .fila{
         display: block;
     }
     .sobremi .fila .col{
         width: fit-content;
     }
-    .sobremi .fila .col  .interes {
-        font-size: 65%;
-        margin-right: 18px;
+    .sobremi .fila .col  .interes, .sobremi .fila .col  .interes .interes-FOTOS,.sobremi .fila .col  .interes .interes-LIBROS{
+        font-size: 90%;
+        
         
     }
     .sobremi .fila .col .contenedor-intereses .interes i{
-        font-size: 30px;
-        margin-left: 18px;
+        font-size: 50px;
+        margin-left: 25%;
+
         
     }
     .sobremi .fila .col .contenedor-intereses .interes{
-        width: 65px;
-        height: 65px;
+        width: 100px;
+        height: 100px;
         background-color: #252A2E;
         border-radius: 10px;
-        margin: 0 10px 10px 0;
+        margin: 0 30px 30px 0;
         display: block;
-        flex-direction:row;
+        flex-direction:column;
         align-items: center;
         justify-content: center;
         transition: .3s;
     }
     .sobremi .fila .col .contenedor-intereses .interes-FOTOS,
 .sobremi .fila .col .contenedor-intereses .interes-LIBROS {
-    width: 65px;
-    height: 65px;
+    width: 100px;
+    height: 100px;
     background-color: #252A2E;
     border-radius: 10px;
-    margin: 0 10px 10px 0;
+    margin: 0 30px 30px 0;
     display: block;
     flex-direction:column;
     align-items: center;
@@ -687,8 +692,8 @@ footer .redes a:hover{
     border: 2px solid #fff;
     width: fit-content;
     display: block;
-    margin: 5px 50px;
-    padding: 10px 102px;
+    margin: 40px 120px;
+    padding: 10px 10px;
     font-size: 16px;
     color: #fff;
     position: absolute;
@@ -738,7 +743,7 @@ footer .redes a:hover{
     .contacto .col .info{
         font-size: 15px;
         margin: 5px;
-        margin-top: 125px;
-        padding: 10px;
+        margin-top: 120px;
+        padding: 15px 5px;
 }
 }
