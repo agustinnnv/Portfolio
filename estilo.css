@@ -175,8 +175,6 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-/* }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: rgb(231, 197, 4); */
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -195,11 +193,6 @@ html{
     justify-content: center;
     transition: .3s;
 }
-
-/* .sobremi .fila .col .contenedor-intereses .interes-FOTOS:hover,
-.sobremi .fila .col .contenedor-intereses .interes-LIBROS:hover {
-    background-color: rgb(231, 197, 4);
-} */
 
 .sobremi .fila .col .contenedor-intereses .interes-FOTOS i,
 .sobremi .fila .col .contenedor-intereses .interes-LIBROS i {
@@ -631,7 +624,7 @@ footer .redes a:hover{
         display: block;
     }
     nav.responsive{
-        display: block;
+        display:inline-block;
         position: absolute;
         right: 0;
         top: 75px;
@@ -642,8 +635,8 @@ footer .redes a:hover{
         display: block !important;
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
+        border-bottom: 15px solid #fff;
+        padding: 20px;
     }
 }
 @media screen and (max-width:700px){
@@ -653,7 +646,67 @@ footer .redes a:hover{
     .sobremi .fila .col{
         width: fit-content;
     }
-
+    .sobremi .fila .col  .interes {
+        font-size: 65%;
+        margin-right: 18px;
+        
+    }
+    .sobremi .fila .col .contenedor-intereses .interes i{
+        font-size: 30px;
+        margin-left: 18px;
+        
+    }
+    .sobremi .fila .col .contenedor-intereses .interes{
+        width: 65px;
+        height: 65px;
+        background-color: #252A2E;
+        border-radius: 10px;
+        margin: 0 10px 10px 0;
+        display: block;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .sobremi .fila .col .contenedor-intereses .interes-FOTOS,
+.sobremi .fila .col .contenedor-intereses .interes-LIBROS {
+    width: 65px;
+    height: 65px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    display: block;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 5px 50px;
+    padding: 10px 102px;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(231, 197, 4);
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
     .skills .fila{
         display: block;
     }
@@ -674,20 +727,18 @@ footer .redes a:hover{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
+
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
         width: 100%;
     }
+
+    .contacto .col .info{
+        font-size: 15px;
+        margin: 5px;
+        margin-top: 125px;
+        padding: 10px;
+}
 }
