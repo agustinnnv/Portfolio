@@ -1,4 +1,4 @@
-const menuVisible = false;
+let menuVisible = false;
 
 function mostrarOcultarMenu() {
     if (menuVisible) {

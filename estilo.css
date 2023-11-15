@@ -627,16 +627,22 @@ footer .redes a:hover{
         display:inline-block;
         position: absolute;
         right: 0;
-        top: 75px;
-        background-color: #252A2E;
+        top: 40px;
+        background-color: rgb(224, 158, 27);
         width: 180px;
     }
     nav.responsive ul{
         display: block !important;
     }
-    nav.responsive ul li{
-        border-bottom: 15px solid #fff;
-        padding: 20px;
+    nav.responsive ul li {
+       
+        border-bottom: 5px solid #fff;
+        padding: 10px;
+    }
+    nav.responsive ul li .nav-letters{
+        font-size: 20px;
+        color: rgb(224, 158, 27); 
+        -webkit-text-stroke: 1.5px #000;
     }
 }
 @media screen and (max-width:700px){
