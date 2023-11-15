@@ -182,17 +182,42 @@ html{
     font-size: 30px;
     margin-bottom: 10px;
 }
+.sobremi .fila .col .contenedor-intereses .interes-FOTOS,
+.sobremi .fila .col .contenedor-intereses .interes-LIBROS {
+    width: 217px; /* Ajusta el ancho según tu preferencia */
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes-FOTOS:hover,
+.sobremi .fila .col .contenedor-intereses .interes-LIBROS:hover {
+    background-color: rgb(231, 197, 4);
+}
+
+.sobremi .fila .col .contenedor-intereses .interes-FOTOS i,
+.sobremi .fila .col .contenedor-intereses .interes-LIBROS i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
     width: fit-content;
     display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
+    margin: -50px 1px;
+    padding: 10px 102px;
     font-size: 16px;
     color: #fff;
-    position: relative;
+    position: absolute;
     z-index: 10;
 }
 .sobremi button .overlay{
@@ -287,13 +312,13 @@ html{
     100%{width: 60%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .database{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s database forwards;
 }
-@keyframes photoshop {
+@keyframes database {
     0%{width: 0%;}
-    100%{width: 35%;}
+    100%{width: 65%;}
 }
 
 .skills .skill .node{
@@ -350,13 +375,13 @@ html{
     100%{width: 98%;}
 }
 
-.skills .skill .iniciativa{
+.skills .skill .ingles{
     width: 0%;
-    animation: 2s iniciativa forwards;
+    animation: 2s ingles forwards;
 }
-@keyframes iniciativa {
+@keyframes ingles {
     0%{width: 0%;}
-    100%{width: 100%;}
+    100%{width: 45%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
@@ -573,19 +598,24 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
-footer .arriba{
-    display: block;
-    width: 50px;
-    height: 50px;
+footer .redes a:hover{
+    background-color: rgb(231, 197, 4);
+}
+/* Estilos para el botón de regreso arriba */
+.arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     background-color: rgb(231, 197, 4);
     color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999; 
+}
+.arriba:hover {
+    background-color: #0056b3;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
